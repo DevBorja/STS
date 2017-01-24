@@ -7,4 +7,4 @@ resp.write('Hola, Mundo!');
 resp.end();
 }
 server.on('request', control);
-server.listen(80);
+server.listen(process.env.PORT || 80);
